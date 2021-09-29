@@ -1,0 +1,22 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss src/styles/main.css -o static/dist/main.css",
+    "watch": "watch 'npm run build' ./layouts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.3.6",
+    "cssnano": "^5.0.8",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.16",
+    "watch": "^1.0.2"
+  }
+}
