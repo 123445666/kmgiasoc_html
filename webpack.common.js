@@ -16,7 +16,7 @@ module.exports = {
 
   // This option controls if and how source maps are generated.
   // https://webpack.js.org/configuration/devtool/
-  devtool: "source-map",
+  // devtool: "source-map",
 
   // https://webpack.js.org/concepts/entry-points/#multi-page-application
   entry: {
@@ -26,7 +26,7 @@ module.exports = {
   // how to write the compiled files to disk
   // https://webpack.js.org/concepts/output/
   output: {
-    filename: "js/[name].[contenthash].js",
+    filename: "js/[name].js",//"js/[name].[contenthash].js",
     path: buildPath,
     clean: true,
   },
@@ -92,13 +92,14 @@ module.exports = {
   // https://webpack.js.org/concepts/plugins/
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles/[name].[contenthash].css",
-      chunkFilename: "styles/[id].[contenthash].css",
+      filename: "styles/[name].css",//"styles/[name].[contenthash].css",
+      chunkFilename: "styles/[id].css",//"styles/[id].[contenthash].css",
     }),
     new CopyPlugin({
       patterns: [
         //open when have new assets and vendors
         { from: "./src/img", to: "assets/" },
+        { from: "./src/vendors", to: "vendors/" },
       ],
       options: {
         concurrency: 100,
