@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @variants hover, focus {
+    .buttonrevert-gray {
+      @apply ring-2;
+      @apply ring-offset-2;
+      @apply ring-offset-gray-800;
+      @apply ring-white;
+      @apply bg-white;
+      @apply text-gray-700;
+    }
+  }
+}
 .mega-menu {
   display: none;
   left: 0;
@@ -50,7 +62,7 @@
 
 .toggle-input:checked + label {
   color: white;
-  @apply bg-gray-700
+  @apply bg-gray-700;
 }
 
 .toggle-input:checked ~ label:after {
