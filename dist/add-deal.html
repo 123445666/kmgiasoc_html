@@ -382,9 +382,130 @@
                   </div>
 
                   <div class="relative pt-4">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Voucher</label>
-                    <input type="number" id="number" name="number" placeholder="Nhập mã khuyến mãi"
-                      class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                    <label for="name" class="text-base leading-7 text-blueGray-500">Chọn Danh Mục</label>
+                    <ul id="filter1"
+                      class="filter-switch flex flex-wrap relative p-1 space-x-1 rounded-md font-semibold text-blue-600 my-4">
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-0" class="sr-only" checked>
+                        <label for="filter1-0"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow peer-checked:buttonrevert-gray">
+                          Công nghệ cao
+                        </label>
+                        <div aria-hidden="true" class="filter-active"></div>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-1" class="sr-only">
+                        <label for="filter1-1"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Ôtô
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-2" class="sr-only">
+                        <label for="filter1-2"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Bảng điều khiển & trò chơi điện tử
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-3" class="sr-only">
+                        <label for="filter1-3"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Văn hóa & Giải trí
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Cửa hàng tạp hóa & cửa hàng tạp hóa
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Thể thao & Ngoài trời
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Phụ kiện thời trang
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Gói di động và internet
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Sức khỏe & Mỹ phẩm
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Thể thao & Ngoài trời
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Gia đình & Trẻ em
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Gói di động và internet
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Nhà & Môi trường sống
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Tài chính & Bảo hiểm
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Vườn & Tự làm
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Dịch vụ
+                        </label>
+                      </li>
+                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                        <label for="filter1-4"
+                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                          Du lịch
+                        </label>
+                      </li>
+                    </ul>
                   </div>
 
                   <div class="relative pt-4">
@@ -409,10 +530,10 @@
                     </select>
                   </div>
 
-                  <section class="flex flex-col w-full h-full p-1 overflow-auto">
-                    <label for="name" class="text-base leading-7 text-blueGray-500 mb-5">Ảnh</label>
+                  <section class="mt-4 flex flex-col w-full h-full p-1 overflow-auto">
+                    <label for="name" class="text-base leading-7 text-blueGray-500">Ảnh</label>
                     <header
-                      class="flex flex-col items-center justify-center py-12 text-base text-blueGray-500 transition duration-500 ease-in-out transform bg-white border border-dashed rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                      class="flex flex-col items-center justify-center py-12 mt-2 text-base text-blueGray-500 transition duration-500 ease-in-out transform bg-white border border-dashed rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
                       <p class="flex flex-wrap justify-center mb-3 text-base leading-7 text-blueGray-500">
                         <span>Drag and drop your</span> <span>files anywhere or</span>
                       </p>
@@ -429,9 +550,10 @@
                   </div>
 
                   <div class="flex items-center w-full pt-4 mb-4">
-                    <button
-                      class="w-full py-3 text-base text-white transition duration-500 ease-in-out transform bg-blue-600 border-blue-600 rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blue-800 ">
-                      Lưu </button>
+                    <button id="AddDealButton"
+                      class="w-full py-3 text-base text-white transition duration-500 ease-in-out transform bg-cyan-800 rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-cyan-500">
+                      Lưu
+                    </button>
                   </div>
                 </form>
               </div>

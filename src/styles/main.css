@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-  @variants hover, focus {
+  @variants hover, focus, peer-checked {
     .buttonrevert-gray {
       @apply ring-2;
       @apply ring-offset-2;
@@ -71,4 +71,16 @@
   padding-left: 6px;
   position: relative;
   top: -1px;
+}
+
+/* Radio choice button */
+.filter-switch label {
+  cursor: pointer;
+}
+.filter-switch-item input:checked + label {
+  color: inherit;
+}
+.filter-switch-item input:not(:checked) + label {
+  --bg-opacity: 0;
+  box-shadow: none;
 }
