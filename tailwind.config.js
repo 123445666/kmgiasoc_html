@@ -2,7 +2,6 @@ const colors = require("tailwindcss/colors");
 const { javascript } = require('webpack');
 
 module.exports = {
-  mode: 'jit',
   purge: {
     enable: true,
     content: ["./src/**/**/*.html", "./src/**/**/*.js"],
