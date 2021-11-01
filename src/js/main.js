@@ -1,6 +1,15 @@
 import "../styles/main.css";
 
 $(function () {
+  $("#ViewModel_FreeShipping").change(function () {
+    if (this.checked) {
+      $("#ViewModel_PriceShipping").val(0);
+      $("#ViewModel_PriceShipping").prop("disabled", true);
+      return;
+    }
+    $("#ViewModel_PriceShipping").prop("disabled", false);
+  });
+
   $("#DealUploadFileDto_File").on("change", function () {
     const file = this.files[0];
     if (file) {

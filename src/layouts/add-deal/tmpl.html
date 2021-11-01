@@ -28,8 +28,8 @@
                 <form>
                   <div class="relative pt-4">
                     <label for="name" class="text-base leading-7 text-blueGray-500">Link</label>
-                    <input type="text" id="name" name="name" placeholder="https://www.example.com/superdeal"
-                      class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                    <input type="text" id="name" name="name" placeholder="https://www.example.com/superdeal" autocomplete="off"
+                      class="w-full border-2 border-gray-700 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                     <p class="text-xs text-gray-400 p-2">Vui lòng cung cấp liên kết đến trang nơi cộng đồng có thể lấy
                       thông tin, xem sản phẩm và tận hưởng ưu đãi!</p>
                   </div>
@@ -38,42 +38,42 @@
                     <div class="w-1/2 relative pt-4 pr-2">
                       <label for="name" class="text-base leading-7 text-blueGray-500">Giá khuyến mãi</label>
                       <input type="number" id="number" name="number" placeholder="0"
-                        class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                        class="w-full border-2 border-gray-700 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                     </div>
                     <div class="w-1/2 relative pt-4">
                       <label for="name" class="text-base leading-7 text-blueGray-500">Giá gốc</label>
                       <input type="number" id="number" name="number" placeholder="0"
-                        class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                        class="w-full border-2 border-gray-700 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                     </div>
                     <div class="w-1/2 relative pt-4 pr-2">
                       <label for="name" class="text-base leading-7 text-blueGray-500">Giá vận chuyển</label>
-                      <input type="number" id="number" name="number" placeholder="0"
-                        class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                      <input type="number" id="ViewModel_PriceShipping" name="ViewModel_PriceShipping" placeholder="0"
+                        class="w-full border-2 border-gray-700 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                     </div>
                   </div>
                   <div class="flex mt-2">
                     <label class="flex items-center">
-                      <input type="checkbox" class="form-checkbox ">
+                      <input type="checkbox" class="form-checkbox" id="ViewModel_FreeShipping">
                       <span class="ml-2 text-blueGray-500">Miễn phí vận chuyển</span>
                     </label>
                   </div>
                   <div class="relative pt-4">
                     <label for="name" class="text-base leading-7 text-blueGray-500">Voucher</label>
                     <input type="number" id="number" name="number" placeholder="Nhập mã khuyến mãi"
-                      class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                      class="w-full border-2 border-gray-700 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                   </div>
 
                   <div class="relative pt-4">
                     <label for="name" class="text-base leading-7 text-blueGray-500">Tiêu đề</label>
                     <input type="number" id="number" name="number" placeholder="Đặt một tiêu đề ngắn gọn ..."
-                      class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                      class="w-full border-2 border-gray-700 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                   </div>
 
                   <div class="relative pt-4">
                     <label for="name" class="text-base leading-7 text-blueGray-500">Mô tả</label>
                     <textarea id="description" name="description"
                       placeholder="Trình bày sản phẩm hoặc ưu đãi bằng lời của bạn, giải thích mức độ thú vị của ưu đãi theo ý kiến ​​của bạn, mô tả cách nhận giá nếu có mánh khóe ... Không sao chép và dán nội dung từ các trang khác! Có phải thỏa thuận của bạn trong cửa hàng? Đừng quên ghi rõ thành phố nơi nó nằm và số hàng có sẵn!"
-                      class="w-full h-32 px-4 py-2 mt-2 text-base text-blueGray-500 transition duration-500 ease-in-out transform bg-white border rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 apearance-none autoexpand ckeditor"></textarea>
+                      class="w-full h-32 px-4 py-2 mt-2 text-base text-blueGray-500 transition duration-500 ease-in-out transform bg-white border rounded-lg focus:ring-cyan-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 apearance-none autoexpand ckeditor"></textarea>
                   </div>
 
                   <div class="relative pt-4">
@@ -205,13 +205,13 @@
                   <div class="relative pt-4">
                     <label for="name" class="text-base leading-7 text-blueGray-500">Ngày bắt đầu</label>
                     <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" placeholder="name"
-                      class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                      class="w-full border-2 border-gray-700 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                   </div>
 
                   <div class="relative pt-4">
                     <label for="name" class="text-base leading-7 text-blueGray-500">Ngày kết thúc</label>
                     <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" placeholder="name"
-                      class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                      class="w-full border-2 border-gray-700 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                   </div>
 
                   <div class="relative mt-4">
@@ -224,29 +224,16 @@
                     </select>
                   </div>
 
-                  <section class="mt-4 flex flex-col w-full h-full p-1 overflow-auto">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Ảnh</label>
-                    <header
-                      class="flex flex-col items-center justify-center py-12 mt-2 text-base text-blueGray-500 transition duration-500 ease-in-out transform bg-white border border-dashed rounded-lg focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
-                      <p class="flex flex-wrap justify-center mb-3 text-base leading-7 text-blueGray-500">
-                        <span>Drag and drop your</span> <span>files anywhere or</span>
-                      </p>
-                      <button
-                        class="w-auto px-2 py-1 my-2 mr-2 text-blueGray-500 transition duration-500 ease-in-out transform border rounded-md hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-gray-100">
-                        Upload a file </button>
-                    </header>
-                  </section>
-
                   <div class="relative pt-4">
                     <div class="bg-white px-2">
                       <div class="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
                         <div class="md:flex">
                           <div class="w-full p-3">
                             <div id="dealImgUpload"
-                              class="relative border-dotted h-48 rounded-lg border-dashed border-2 border-blue-700 bg-gray-100 flex justify-center items-center">
+                              class="relative border-dotted h-48 rounded-lg border-dashed border-2 border-cyan-700 bg-gray-100 flex justify-center items-center">
                               <div class="absolute">
                                 <div class="flex flex-col items-center">
-                                  <i class="fa fa-folder-open fa-4x text-blue-700"></i>
+                                  <i class="fa fa-folder-open fa-4x text-cyan-700"></i>
                                   <span class="block text-gray-400 font-normal">Attach your image here</span>
                                 </div>
                               </div>
@@ -265,7 +252,7 @@
                   <div class="relative pt-4">
                     <label for="name" class="text-base leading-7 text-blueGray-500">Địa chỉ local</label>
                     <input type="number" id="number" name="number" placeholder="Địa chỉ nơi bán ..."
-                      class="w-full px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                      class="w-full border-2 border-gray-700 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                   </div>
 
                   <div class="flex items-center w-full pt-4 mb-4">
