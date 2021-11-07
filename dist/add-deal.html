@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <meta charset="utf-8" />
   <title>Landing | Tailwind Starter Kit by Creative Tim</title>
@@ -12,9 +13,10 @@
   <link rel="stylesheet" href="vendors/ckeditor/styles.css" />
 <script defer src="js/index.js"></script><link href="styles/index.css" rel="stylesheet"></head>
 
-<body>
 
-  <header>
+  <body>
+
+    <header>
   <nav>
     <div class="container px-4 mx-auto flex flex-wrap items-center">
       <div class="w-full relative flex p-4 lg:p-6 justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -22,7 +24,7 @@
           class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase hover:text-gray-900">Logo</a>
         <button
           class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded block lg:hidden outline-none focus:outline-none"
-          type="button" onclick="toggleNavbar('example-collapse-navbar')">
+          type="button" id="collapse-navbar">
           <i class="text-gray fas fa-bars"></i>
         </button>
       </div>
@@ -44,6 +46,86 @@
           <li class="toggleable hover:bg-gray-700 hover:text-white">
             <input type="checkbox" value="selected" id="toggle-one" class="toggle-input">
             <label for="toggle-one" class="block cursor-pointer py-6 px-4 lg:p-6 text-sm lg:text-base font-bold">Click
+              to
+              show</label>
+            <div role="toggle" class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-700 z-50">
+              <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
+                <ul
+                  class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                  <h3 class="font-bold text-xl text-white text-bold mb-2">Bespin</h3>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Lando
+                      Calrissian</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Nien Nunb</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Mon Mothma</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Wedge Antilles</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Admiral Gial
+                      Ackbar</a>
+                  </li>
+                </ul>
+                <ul
+                  class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                  <h3 class="font-bold text-xl text-white text-bold mb-2">Ahch-To</h3>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Obi-Wan Kenobi</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Yoda</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Emperor
+                      Palpatine</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Han Solo</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Anakin
+                      Skywalker/Darth
+                      Vader</a>
+                  </li>
+                </ul>
+                <ul
+                  class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                  <h3 class="font-bold text-xl text-white text-bold">Coruscant</h3>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Luke Skywalker</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Princess Leia</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">Chewbacca</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">R2-D2</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block p-3 hover:bg-gray-900 text-gray-300 hover:text-white">C-3PO</a>
+                  </li>
+                </ul>
+                <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 pb-6 pt-6 lg:pt-3">
+                  <h3 class="font-bold text-xl text-white text-bold mb-2">Endor</h3>
+                  <li class="pt-3">
+                    <img src="https://picsum.photos/205">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- end Toggleable Link-->
+           <!--Toggleable Link-->
+           <li class="toggleable hover:bg-gray-700 hover:text-white">
+            <input type="checkbox" value="selected" id="toggle-two" class="toggle-input">
+            <label for="toggle-two" class="block cursor-pointer py-6 px-4 lg:p-6 text-sm lg:text-base font-bold">Click
               to
               show</label>
             <div role="toggle" class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-gray-700 z-50">
@@ -321,281 +403,284 @@
 </header>
 
 
-    <main class="bg-gray-300 mb-32">
-      <div class="flex flex-wrap py-12">
-        <div class="w-full md:w-9/12 px-2 mr-auto ml-auto">
-          <div
-            class="container relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg overflow-hidden">
-            <div class="container items-center px-5 py-12 lg:px-20">
-              <div
-                class="flex flex-col w-full p-10 px-8 pt-6 mx-auto my-6 mb-4 transition duration-500 ease-in-out transform bg-white border rounded-lg lg:w-1/2">
-                <h1 class="page-title text-lg font-bold space--mb-0"> Poster un nouveau deal </h1>
-                <form>
-                  <div class="relative pt-4">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Link</label>
-                    <input type="text" id="name" name="name" placeholder="https://www.example.com/superdeal" autocomplete="off"
-                      class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
-                    <p class="text-xs text-gray-400 p-2">Vui lòng cung cấp liên kết đến trang nơi cộng đồng có thể lấy
-                      thông tin, xem sản phẩm và tận hưởng ưu đãi!</p>
-                  </div>
-                  <h2 class="page-title text-lg font-bold space--mb-0"> Thông tin </h2>
-                  <div class="flex flex-wrap flex-row">
-                    <div class="w-1/2 relative pt-4 pr-2">
-                      <label for="name" class="text-base leading-7 text-blueGray-500">Giá khuyến mãi</label>
-                      <input type="number" id="number" name="number" placeholder="0"
+      <main class="bg-gray-300 mb-32">
+        <div class="flex flex-wrap py-12">
+          <div class="w-full md:w-9/12 px-2 mr-auto ml-auto">
+            <div
+              class="container relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg overflow-hidden">
+              <div class="container items-center px-5 py-12 lg:px-20">
+                <div
+                  class="flex flex-col w-full p-10 px-8 pt-6 mx-auto my-6 mb-4 transition duration-500 ease-in-out transform bg-white border rounded-lg lg:w-1/2">
+                  <h1 class="page-title text-lg font-bold space--mb-0"> Poster un nouveau deal </h1>
+                  <form>
+                    <div class="relative pt-4">
+                      <label for="name" class="text-base leading-7 text-blueGray-500">Link</label>
+                      <input type="text" id="name" name="name" placeholder="https://www.example.com/superdeal"
+                        autocomplete="off"
+                        class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                      <p class="text-xs text-gray-400 p-2">Vui lòng cung cấp liên kết đến trang nơi cộng đồng có thể lấy
+                        thông tin, xem sản phẩm và tận hưởng ưu đãi!</p>
+                    </div>
+                    <h2 class="page-title text-lg font-bold space--mb-0"> Thông tin </h2>
+                    <div class="flex flex-wrap flex-row">
+                      <div class="w-1/2 relative pt-4 pr-2">
+                        <label for="name" class="text-base leading-7 text-blueGray-500">Giá khuyến mãi</label>
+                        <input type="number" id="number" name="number" placeholder="0"
+                          class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                      </div>
+                      <div class="w-1/2 relative pt-4">
+                        <label for="name" class="text-base leading-7 text-blueGray-500">Giá gốc</label>
+                        <input type="number" id="number" name="number" placeholder="0"
+                          class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                      </div>
+                      <div class="w-1/2 relative pt-4 pr-2">
+                        <label for="name" class="text-base leading-7 text-blueGray-500">Giá vận chuyển</label>
+                        <input type="number" id="ViewModel_PriceShipping" name="ViewModel_PriceShipping" placeholder="0"
+                          class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                      </div>
+                    </div>
+                    <div class="flex mt-2">
+                      <label class="flex items-center">
+                        <input type="checkbox" class="form-checkbox" id="ViewModel_FreeShipping">
+                        <span class="ml-2 text-blueGray-500">Miễn phí vận chuyển</span>
+                      </label>
+                    </div>
+                    <div class="relative pt-4">
+                      <label for="name" class="text-base leading-7 text-blueGray-500">Voucher</label>
+                      <input type="number" id="number" name="number" placeholder="Nhập mã khuyến mãi"
                         class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                     </div>
-                    <div class="w-1/2 relative pt-4">
-                      <label for="name" class="text-base leading-7 text-blueGray-500">Giá gốc</label>
-                      <input type="number" id="number" name="number" placeholder="0"
+
+                    <div class="relative pt-4">
+                      <label for="name" class="text-base leading-7 text-blueGray-500">Tiêu đề</label>
+                      <input type="number" id="number" name="number" placeholder="Đặt một tiêu đề ngắn gọn ..."
                         class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                     </div>
-                    <div class="w-1/2 relative pt-4 pr-2">
-                      <label for="name" class="text-base leading-7 text-blueGray-500">Giá vận chuyển</label>
-                      <input type="number" id="ViewModel_PriceShipping" name="ViewModel_PriceShipping" placeholder="0"
+
+                    <div class="relative pt-4">
+                      <label for="name" class="text-base leading-7 text-blueGray-500">Mô tả</label>
+                      <textarea id="description" name="description"
+                        placeholder="Trình bày sản phẩm hoặc ưu đãi bằng lời của bạn, giải thích mức độ thú vị của ưu đãi theo ý kiến ​​của bạn, mô tả cách nhận giá nếu có mánh khóe ... Không sao chép và dán nội dung từ các trang khác! Có phải thỏa thuận của bạn trong cửa hàng? Đừng quên ghi rõ thành phố nơi nó nằm và số hàng có sẵn!"
+                        class="w-full h-32 px-4 py-2 mt-2 text-base text-blueGray-500 transition duration-500 ease-in-out transform bg-white border rounded-lg focus:ring-cyan-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 apearance-none autoexpand ckeditor"></textarea>
+                    </div>
+
+                    <div class="relative pt-4">
+                      <label for="name" class="text-base leading-7 text-blueGray-500">Chọn Danh Mục</label>
+                      <ul id="filter1"
+                        class="filter-switch flex flex-wrap relative p-1 space-x-1 rounded-md font-semibold text-blue-600 my-4">
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-0" class="sr-only">
+                          <label for="filter1-0"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Công nghệ cao
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-1" class="sr-only">
+                          <label for="filter1-1"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Ôtô
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-2" class="sr-only">
+                          <label for="filter1-2"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Bảng điều khiển & trò chơi điện tử
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-3" class="sr-only">
+                          <label for="filter1-3"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Văn hóa & Giải trí
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Cửa hàng tạp hóa & cửa hàng tạp hóa
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Thể thao & Ngoài trời
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Phụ kiện thời trang
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Gói di động và internet
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Sức khỏe & Mỹ phẩm
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Thể thao & Ngoài trời
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Gia đình & Trẻ em
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Gói di động và internet
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Nhà & Môi trường sống
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Tài chính & Bảo hiểm
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Vườn & Tự làm
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Dịch vụ
+                          </label>
+                        </li>
+                        <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
+                          <input type="radio" name="filter1" id="filter1-4" class="sr-only">
+                          <label for="filter1-4"
+                            class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
+                            Du lịch
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="relative pt-4">
+                      <label for="name" class="text-base leading-7 text-blueGray-500">Ngày bắt đầu</label>
+                      <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" placeholder="name"
                         class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
                     </div>
-                  </div>
-                  <div class="flex mt-2">
-                    <label class="flex items-center">
-                      <input type="checkbox" class="form-checkbox" id="ViewModel_FreeShipping">
-                      <span class="ml-2 text-blueGray-500">Miễn phí vận chuyển</span>
-                    </label>
-                  </div>
-                  <div class="relative pt-4">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Voucher</label>
-                    <input type="number" id="number" name="number" placeholder="Nhập mã khuyến mãi"
-                      class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
-                  </div>
 
-                  <div class="relative pt-4">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Tiêu đề</label>
-                    <input type="number" id="number" name="number" placeholder="Đặt một tiêu đề ngắn gọn ..."
-                      class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
-                  </div>
+                    <div class="relative pt-4">
+                      <label for="name" class="text-base leading-7 text-blueGray-500">Ngày kết thúc</label>
+                      <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" placeholder="name"
+                        class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                    </div>
 
-                  <div class="relative pt-4">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Mô tả</label>
-                    <textarea id="description" name="description"
-                      placeholder="Trình bày sản phẩm hoặc ưu đãi bằng lời của bạn, giải thích mức độ thú vị của ưu đãi theo ý kiến ​​của bạn, mô tả cách nhận giá nếu có mánh khóe ... Không sao chép và dán nội dung từ các trang khác! Có phải thỏa thuận của bạn trong cửa hàng? Đừng quên ghi rõ thành phố nơi nó nằm và số hàng có sẵn!"
-                      class="w-full h-32 px-4 py-2 mt-2 text-base text-blueGray-500 transition duration-500 ease-in-out transform bg-white border rounded-lg focus:ring-cyan-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 apearance-none autoexpand ckeditor"></textarea>
-                  </div>
+                    <div class="relative mt-4">
+                      <label for="name" class="text-base leading-7 text-blueGray-500">Chọn nơi bán</label>
+                      <select
+                        class="w-full px-4 py-2 mt-2 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                        <option>Surabaya</option>
+                        <option>Bandung</option>
+                        <option>jakarta</option>
+                      </select>
+                    </div>
 
-                  <div class="relative pt-4">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Chọn Danh Mục</label>
-                    <ul id="filter1"
-                      class="filter-switch flex flex-wrap relative p-1 space-x-1 rounded-md font-semibold text-blue-600 my-4">
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-0" class="sr-only">
-                        <label for="filter1-0"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Công nghệ cao
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-1" class="sr-only">
-                        <label for="filter1-1"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Ôtô
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-2" class="sr-only">
-                        <label for="filter1-2"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Bảng điều khiển & trò chơi điện tử
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-3" class="sr-only">
-                        <label for="filter1-3"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Văn hóa & Giải trí
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Cửa hàng tạp hóa & cửa hàng tạp hóa
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Thể thao & Ngoài trời
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Phụ kiện thời trang
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Gói di động và internet
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Sức khỏe & Mỹ phẩm
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Thể thao & Ngoài trời
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Gia đình & Trẻ em
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Gói di động và internet
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Nhà & Môi trường sống
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Tài chính & Bảo hiểm
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Vườn & Tự làm
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Dịch vụ
-                        </label>
-                      </li>
-                      <li class="filter-switch-item flex relative bg-gray-300x bg-gray-200 mt-2">
-                        <input type="radio" name="filter1" id="filter1-4" class="sr-only">
-                        <label for="filter1-4"
-                          class="py-1 px-2 text-sm leading-6 text-gray-600 rounded shadow buttonrevert-gray">
-                          Du lịch
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="relative pt-4">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Ngày bắt đầu</label>
-                    <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" placeholder="name"
-                      class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
-                  </div>
-
-                  <div class="relative pt-4">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Ngày kết thúc</label>
-                    <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" placeholder="name"
-                      class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
-                  </div>
-
-                  <div class="relative mt-4">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Chọn nơi bán</label>
-                    <select
-                      class="w-full px-4 py-2 mt-2 text-base text-black transition duration-500 ease-in-out transform rounded-lg bg-gray-100 focus:border-blueGray-500 focus:bg-white focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
-                      <option>Surabaya</option>
-                      <option>Bandung</option>
-                      <option>jakarta</option>
-                    </select>
-                  </div>
-
-                  <div class="relative pt-4">
-                    <div class="bg-white px-2">
-                      <div class="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
-                        <div class="md:flex">
-                          <div class="w-full p-3">
-                            <div id="dealImgUpload"
-                              class="relative border-dotted h-48 rounded-lg border-dashed border-2 border-cyan-700 bg-gray-100 flex justify-center items-center">
-                              <div class="absolute">
-                                <div class="flex flex-col items-center">
-                                  <i class="fa fa-folder-open fa-4x text-cyan-700"></i>
-                                  <span class="block text-gray-400 font-normal">Attach your image here</span>
+                    <div class="relative pt-4">
+                      <div class="bg-white px-2">
+                        <div class="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-xl">
+                          <div class="md:flex">
+                            <div class="w-full p-3">
+                              <div id="dealImgUpload"
+                                class="relative border-dotted h-48 rounded-lg border-dashed border-2 border-cyan-700 bg-gray-100 flex justify-center items-center">
+                                <div class="absolute">
+                                  <div class="flex flex-col items-center">
+                                    <i class="fa fa-folder-open fa-4x text-cyan-700"></i>
+                                    <span class="block text-gray-400 font-normal">Attach your image here</span>
+                                  </div>
                                 </div>
+                                <input id="DealUploadFileDto_File" type="file"
+                                  class="h-full w-full opacity-0 cursor-pointer" name="">
                               </div>
-                              <input id="DealUploadFileDto_File" type="file" class="h-full w-full opacity-0 cursor-pointer" name="">
-                            </div>
-                            <div id="dealImgUploaded" class="hidden">
-                              <img id="dealImgPreview" src="#" class="flex flex-col items-center" />
-                              <a id="removeDealImgFile" href="#" class="text-red-600">Remove image</a>
+                              <div id="dealImgUploaded" class="hidden">
+                                <img id="dealImgPreview" src="#" class="flex flex-col items-center" />
+                                <a id="removeDealImgFile" href="#" class="text-red-600">Remove image</a>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="relative pt-4">
-                    <label for="name" class="text-base leading-7 text-blueGray-500">Địa chỉ local</label>
-                    <input type="number" id="number" name="number" placeholder="Địa chỉ nơi bán ..."
-                      class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
-                  </div>
+                    <div class="relative pt-4">
+                      <label for="name" class="text-base leading-7 text-blueGray-500">Địa chỉ local</label>
+                      <input type="number" id="number" name="number" placeholder="Địa chỉ nơi bán ..."
+                        class="w-full border-2 border-gray-300 px-4 py-2 mt-2 mr-4 text-base text-black transition duration-500 ease-in-out transform rounded-lg focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                    </div>
 
-                  <div class="flex items-center w-full pt-4 mb-4">
-                    <button id="AddDealButton"
-                      class="w-full py-3 text-base text-white transition duration-500 ease-in-out transform bg-cyan-800 rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-cyan-500">
-                      Lưu
-                    </button>
-                  </div>
-                </form>
+                    <div class="flex items-center w-full pt-4 mb-4">
+                      <button id="AddDealButton"
+                        class="w-full py-3 text-base text-white transition duration-500 ease-in-out transform bg-cyan-800 rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-cyan-500">
+                        Lưu
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="w-full md:w-3/12 px-2 mr-auto ml-auto">
-          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
-            <img alt="..."
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
-              class="w-full align-middle rounded-t-lg">
-            <blockquote class="relative p-8 mb-4">
-              <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
-                class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
-                <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
-              </svg>
-              <h4 class="text-xl font-bold text-white">
-                Top Notch Services
-              </h4>
-              <p class="text-md font-light mt-2 text-white">
-                The Arctic Ocean freezes every winter and much of the
-                sea-ice then thaws every summer, and that process will
-                continue whatever happens.
-              </p>
-            </blockquote>
+          <div class="w-full md:w-3/12 px-2 mr-auto ml-auto">
+            <div
+              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
+              <img alt="..."
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                class="w-full align-middle rounded-t-lg">
+              <blockquote class="relative p-8 mb-4">
+                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                  <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
+                </svg>
+                <h4 class="text-xl font-bold text-white">
+                  Top Notch Services
+                </h4>
+                <p class="text-md font-light mt-2 text-white">
+                  The Arctic Ocean freezes every winter and much of the
+                  sea-ice then thaws every summer, and that process will
+                  continue whatever happens.
+                </p>
+              </blockquote>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <footer class="relative bg-gray-300 pt-8 pb-6">
   <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
     style="height: 80px;">
     <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
@@ -688,53 +773,10 @@
 </footer>
 
 <script src="vendors/alpinejs/cdn.min.js"></script>
+<script src="vendors/ckeditor/ckeditor.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-<script>
-  function toggleNavbar(collapseID) {
-    document.getElementById(collapseID).classList.toggle("hidden");
-    document.getElementById(collapseID).classList.toggle("block");
-  }
-</script>
-
-      <script src="vendors/ckeditor/ckeditor.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-      <script>
-        function toggleNavbar(collapseID) {
-          document.getElementById(collapseID).classList.toggle("hidden");
-          document.getElementById(collapseID).classList.toggle("block");
-        }
-
-        var allEditors = document.querySelectorAll('.ckeditor');
-        allEditors.forEach(function (el) {
-          ClassicEditor
-            .create(el, {
-              toolbar: {
-                items: [
-                  'bold',
-                  'italic',
-                  'strikethrough',
-                  'underline',
-                  'link',
-                  'bulletedList',
-                  'numberedList',
-                  '|',
-                  'imageUpload',
-                  'mediaEmbed'
-                ]
-              },
-              image: {
-                toolbar: [
-                  'imageTextAlternative'
-                ]
-              }
-            })
-            .catch(error => {
-              console.error(error);
-            });
-        });
-
-      </script>
-</body>
+  </body>
 
 </html>

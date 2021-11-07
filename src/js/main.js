@@ -30,4 +30,39 @@ $(function () {
     $("#dealImgPreview").attr("src", "");
     $("#DealUploadFileDto_File").val("");
   });
+
+  $("#collapse-navbar").on("click", function (e) {
+    e.preventDefault();
+    document
+      .getElementById("example-collapse-navbar")
+      .classList.toggle("hidden");
+    document
+      .getElementById("example-collapse-navbar")
+      .classList.toggle("block");
+  });
+
+  var allEditors = document.querySelectorAll(".ckeditor");
+  allEditors.forEach(function (el) {
+    ClassicEditor.create(el, {
+      toolbar: {
+        items: [
+          "bold",
+          "italic",
+          "strikethrough",
+          "underline",
+          "link",
+          "bulletedList",
+          "numberedList",
+          "|",
+          "imageUpload",
+          "mediaEmbed",
+        ],
+      },
+      image: {
+        toolbar: ["imageTextAlternative"],
+      },
+    }).catch((error) => {
+      console.error(error);
+    });
+  });
 });
