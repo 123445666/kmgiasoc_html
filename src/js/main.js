@@ -15,8 +15,8 @@ $(function () {
     if (file) {
       let reader = new FileReader();
       reader.onload = function (event) {
-        $("#dealImgUpload").hide();
-        $("#dealImgUploaded").show();
+        $("#dealImgUpload").addClass("hidden");
+        $("#dealImgUploaded").removeClass("hidden");
         $("#dealImgPreview").attr("src", event.target.result);
       };
       reader.readAsDataURL(file);
@@ -25,8 +25,8 @@ $(function () {
 
   $("#removeDealImgFile").on("click", function (e) {
     e.preventDefault();
-    $("#dealImgUpload").show();
-    $("#dealImgUploaded").hide();
+    $("#dealImgUpload").removeClass("hidden");
+    $("#dealImgUploaded").addClass("hidden");
     $("#dealImgPreview").attr("src", "");
     $("#DealUploadFileDto_File").val("");
   });
